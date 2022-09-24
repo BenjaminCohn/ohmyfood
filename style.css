@@ -12,6 +12,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 /*header*/
 header {
   font-family: "Shrikhand", cursive;
@@ -21,7 +25,6 @@ header {
   margin: 0;
 }
 
-/*main*/
 main .ville {
   display: flex;
   align-items: center;
@@ -36,7 +39,6 @@ main .ville {
   font-size: 8px 16px;
 }
 
-/*********************/
 /*Section explorer*/
 .explorer {
   text-align: center;
@@ -68,5 +70,22 @@ main .ville {
   transform: scale(1.02);
   opacity: 0.9;
 }
+
+/*fonctionnement*/
+.fonction ol {
+  display: flex;
+}
+
+.fonction li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*********************/
 
 /*# sourceMappingURL=style.css.map */
