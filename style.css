@@ -60,10 +60,10 @@ main .ville {
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 2px 1px 16px -3px #000000;
   background-image: -webkit-linear-gradient(top, #9356DC, #FF79DA);
   transition: transform 100ms;
   margin-top: 2rem;
+  box-shadow: 2px 1px 16px -3px #000000;
 }
 
 .explorer button:hover {
@@ -74,11 +74,24 @@ main .ville {
 /*fonctionnement*/
 .fonction ol {
   display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .fonction ol {
+    flex-direction: column;
+  }
 }
 
 .fonction li {
   background-color: #f6f6f6;
   padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px #000000;
+}
+.fonction li:hover {
+  transform: scale(1.02);
 }
 
 body {

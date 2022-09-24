@@ -1,13 +1,26 @@
+@import "../utils/zoom.scss";
 /*fonctionnement*/
-.fonction{
+.fonction {
     & ol{
     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    @media (max-width: 768px) { 
+        flex-direction: column;  
     }
 }
+}
+
 
 .fonction {
     & li{
     background-color: #f6f6f6;
     padding: 1rem 2rem;
+    flex-grow:1;
+    border-radius: 1rem;
+    @include base-shadow;
+    &:hover{
+        @include zoom;
+    }
     }
 }
