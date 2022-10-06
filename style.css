@@ -72,26 +72,58 @@ main .ville {
 }
 
 /*fonctionnement*/
-.fonction ol {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.function__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
 }
-@media (max-width: 768px) {
-  .fonction ol {
-    flex-direction: column;
+@media (min-width: 64rem) {
+  .function__steps {
+    display: flex;
   }
 }
-
-.fonction li {
+.function__step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
-  flex-grow: 1;
-  border-radius: 1rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  display: flex;
+  position: relative;
 }
-.fonction li:hover {
-  transform: scale(1.02);
+@media (min-width: 64rem) {
+  .function__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .function__step:first-child {
+    margin-left: 0.75rem;
+  }
+}
+.function__step:first-child {
+  margin-top: 0;
+}
+.function__step:last-child {
+  margin-bottom: 0;
+}
+.function__step::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: purple;
+  color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  left: -0.46rem;
+  position: absolute;
+}
+.function__icon {
+  margin-right: 1rem;
+  color: #7e7e7e;
 }
 
 body {
