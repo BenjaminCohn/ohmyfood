@@ -18,14 +18,18 @@
 }
 
 .card{
-    & .card__image{
-        border-radius: 3rem;
+    &__image{
+        border-radius: 1rem;
         background-size: cover;
         object-fit: cover;
         height: 15rem;
-        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     }
-  
+    @for $i from 1 through 4 {
+       &__image-#{$i}{
+            background-image: url("../images/restaurants/menu-#{$i}.jpg");
+        }
+    }
  }
 }
 
+/* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
