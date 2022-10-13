@@ -1,14 +1,16 @@
+/* ville */
 main .ville {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 1rem;
     background-color: #f3f3f3;
     text-align: center;
-    padding: 8px;
+    padding: 0.3rem;
+    
   }
   
-  main .ville {
+  main .ville i {
     font-size: 8px 16px;
   }
   

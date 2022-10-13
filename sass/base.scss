@@ -6,13 +6,18 @@
 ::before
 ::after{
     box-sizing: border-box;
-    border: 1px solid;
+    
 }
 body{
-    margin: 0;
+    margin: 0px;
     font-family: "Roboto", sans-serif;
 }
 
 main{
-    padding: 0 1rem;
+    padding: 0 7rem;
+}
+
+h2{
+    padding: 2rem;
+    margin: 0;
 }
