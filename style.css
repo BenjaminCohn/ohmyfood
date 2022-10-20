@@ -21,6 +21,45 @@ h2 {
   margin: 0;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader__item {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  animation: jump 1s;
+  animation-iteration-count: 1;
+}
+.loader__itemContainer {
+  display: flex;
+  width: 5rem;
+  justify-content: space-between;
+}
+.loader__item--1 {
+  background-color: #9356DC;
+}
+.loader__item--2 {
+  background-color: #FF79DA;
+  animation-delay: 0.25s;
+}
+.loader__item--3 {
+  background-color: #99E2D0;
+  animation-delay: 0.5s;
+}
+
 /*header*/
 header {
   font-family: "Shrikhand", cursive;
@@ -62,11 +101,29 @@ main .ville i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.menus .menu_card .new {
+  position: relative;
+}
+.menus .menu_card .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+}
 .menus .card__image {
-  border-radius: 1rem;
+  height: 12rem;
   background-size: cover;
+  border: 0 solid transparent;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
   object-fit: cover;
-  height: 15rem;
 }
 .menus .card__image-1 {
   background-image: url("../images/restaurants/menu-1.jpg");
@@ -156,7 +213,7 @@ main .ville i {
 .function__step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
-  background: purple;
+  background-color: #9356DC;
   color: white;
   height: 1.5rem;
   width: 1.5rem;
@@ -179,7 +236,77 @@ main .ville i {
   transform: scale(1.01);
 }
 
-/*@import "utils/annimation";*/
+.footer {
+  background-color: #353535;
+  background-image: url("../images/logo/ohmyfood.png");
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.footer__logo {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__listElt {
+  margin: 0.2rem 0;
+}
+.footer__listElt:first-child {
+  margin-top: 0;
+}
+.footer__listElt:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/* Loader */
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;

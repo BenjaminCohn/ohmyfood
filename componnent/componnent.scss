@@ -1,6 +1,7 @@
 @import"../utils/box-shadow";
 
 
+
 /*Bouton explorer*/
 
 .explorer button{
@@ -64,7 +65,7 @@
       &::before {
         counter-increment: compteListe 1;
         content: counter(compteListe) " ";
-        background: purple;
+        background-color: #9356DC;
         color: white;
         height: 1.5rem;
         width: 1.5rem;

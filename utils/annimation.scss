@@ -1,55 +1,36 @@
 /* Loader */
 
-.loader{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-      
+@keyframes itemAppear {
+  0% {
+    transform: scale(0)
   }
-  /* Creating the dots */
-  .loader span{
-    height: 25px;
-    width: 25px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: green;
-    animation: loading 1s linear infinite;
-    &:nth-child(1){
-      animation-delay: 0.1s;
-    }
-    &:nth-child(2){
-      animation-delay: 0.2s;
-    }
-    &:nth-child(3){
-      animation-delay: 0.3s;
-    }
-    &:nth-child(4){
-      animation-delay: 0.4s;
-    }
-    &:nth-child(5){
-      animation-delay: 0.5s;
-    }
+  100% {
+    transform: scale(1);
   }
-  
-  /* Creating the loading animation*/
-  @keyframes loading {
-    0%{
-     transform: translateX(0);
-    }
-    25%{
-     transform: translateX(15px);
-    }
-    50%{
-     transform: translateX(-15px);
-    }
-    100%{
-     transform: translateX(0);
-    }
-    
-      
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
   }
-   
+} 
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  // 0% {
+  //   transform: translateY(0);
+  // }
+}
  
