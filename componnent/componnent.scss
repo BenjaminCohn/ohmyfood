@@ -25,9 +25,7 @@
 /*fonctionnement*/
 
 .function {
-     &__steps {
-      margin: 0;
-      padding: 0;
+     &__steps { 
       list-style: none;
       counter-reset: compteListe;
       @media (min-width:64rem) {

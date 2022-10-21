@@ -46,6 +46,26 @@
             background-image: url("../images/restaurants/menu-#{$i}.jpg");
         }
     }
+    &__description{
+        position: relative;
+        h3,
+        p{
+            margin: 0.5rem;
+        }
+
+        h3{
+            padding-top: 0.5rem;
+        }
+
+        i{
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+    }
  }
 }
 

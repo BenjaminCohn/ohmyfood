@@ -15,10 +15,20 @@ body {
 main {
   padding: 0 7rem;
 }
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
+}
 
 h2 {
   padding: 2rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .loader {
@@ -137,6 +147,23 @@ main .ville i {
 .menus .card__image-4 {
   background-image: url("../images/restaurants/menu-4.jpg");
 }
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3,
+.menus .card__description p {
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  padding-top: 0.5rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
 /*Section explorer*/
@@ -175,8 +202,6 @@ main .ville i {
 
 /*fonctionnement*/
 .function__steps {
-  margin: 0;
-  padding: 0;
   list-style: none;
   counter-reset: compteListe;
 }
@@ -236,46 +261,18 @@ main .ville i {
   transform: scale(1.01);
 }
 
-.footer {
+footer {
   background-color: #353535;
-  background-image: url("../images/logo/ohmyfood.png");
-}
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-.footer__logo {
   color: white;
-  font-family: "Shrikhand", "cursive";
-  margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  padding: 1rem 2rem;
 }
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  padding: 1rem 0;
 }
-.footer__listElt {
-  margin: 0.2rem 0;
-}
-.footer__listElt:first-child {
-  margin-top: 0;
-}
-.footer__listElt:last-child {
-  margin-bottom: 0;
-}
-.footer__link {
-  color: white;
-  text-decoration: none;
-}
-.footer__link:hover {
-  text-decoration: underline;
-}
-.footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
+footer p {
+  padding: 0.2rem;
 }
 
 /* Loader */
