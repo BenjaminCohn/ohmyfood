@@ -1,9 +1,9 @@
+
 .banner img{
-    display: block;
-    width: 100%;
-    max-height: 60vh;
-    object-fit: cover;
-    object-position: bottom;
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
 
 }
 
@@ -211,7 +211,7 @@
   
   @for $i from 0 to 9 {
     .delay-#{$i} {
-      animation-delay:  #{$i/10}s;
+      animation-delay: #{$i/10}s;
     }
   }
   
@@ -221,8 +221,21 @@
     justify-content: center;
     padding: 3rem 0;
   }
- /* 
-  .commandBtn {
-    @include button(primary);
+ 
+  .commandBtn{
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition: 100ms;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
     cursor: pointer;
-  }*/
+}
+
+.commandBtn:hover{
+  transform: scale(1.02);
+  opacity: 0.9;
+}
