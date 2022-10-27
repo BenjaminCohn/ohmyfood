@@ -240,7 +240,7 @@ main .ville i {
 }
 
 .function__steps :hover {
-  transform: scale(1.04);
+  transform: scale(1);
   background-color: #e4cdff;
 }
 
