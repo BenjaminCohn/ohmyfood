@@ -27,14 +27,14 @@
     }
   }
   .menu {
-    margin-top: -4rem;
+    margin-top: -7rem;
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
   
     &__header {
-      padding: 1rem 2rem 0 1rem;
+      /*padding: 1rem 2rem 0 1rem;*/
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -211,7 +211,7 @@
   
   @for $i from 0 to 9 {
     .delay-#{$i} {
-      animation-delay: #{$i/10}s;
+      animation-delay: #{$i/10};
     }
   }
   

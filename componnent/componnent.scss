@@ -20,6 +20,7 @@
 .explorer button:hover{
   transform: scale(1.02);
   opacity: 0.9;
+  
 }
 
 /*fonctionnement*/
@@ -36,7 +37,7 @@
     &__step {
       padding: 1.5rem;
       margin: 1rem 0 1rem 0.75rem;
-      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      box-shadow: 2px 1px 16px -3px #7e7e7e;
       border-radius: 1.25rem;
       background-color: #f6f6f6;
       display: flex;
@@ -86,8 +87,9 @@
   }
 
   .function__steps :hover{
-    transform: scale(1.01);
-  
+    transform: scale(1.04);
+    background-color: #e4cdff;
+      
   }
   
   

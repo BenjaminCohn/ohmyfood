@@ -42,7 +42,8 @@
     box-shadow: none;
     object-fit: cover;
     }
-    @for $i from 1 through 4 {
+    @for $i from 1 through 4 {  
+        /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
        &__image-#{$i}{
             background-image: url("../images/restaurants/menu-#{$i}.jpg");
         }
@@ -53,6 +54,7 @@
         border-radius: 0 0 1rem 1rem;
         h3, p{
             padding: 0.3rem;
+            margin-top: auto;
         }
         i{
             font-size: 2rem;
@@ -76,5 +78,8 @@
     }
  }
 }
+.card:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
 
-/* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
