@@ -38,6 +38,7 @@ header {
   padding: 0.3rem;
   margin: 0;
   position: relative;
+  box-shadow: 1px 1px 10px #dfdfdf;
 }
 
 h1 {
@@ -104,6 +105,7 @@ main .ville i {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
+  box-shadow: 2px 1px 16px -3px #000000;
 }
 .menus .card__image-1 {
   background-image: url("./images/restaurants/menu-1.jpg");
@@ -121,6 +123,7 @@ main .ville i {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: 2px 1px 16px -3px #000000;
 }
 .menus .card__description h3, .menus .card__description p {
   padding: 0.3rem;

@@ -9,6 +9,7 @@
 
     .menu_card{
         background-color: #f6f6f6;
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr) ;
         gap: 2rem;  
@@ -41,6 +42,7 @@
     border-radius: 1rem 1rem 0 0;
     box-shadow: none;
     object-fit: cover;
+    box-shadow: 2px 1px 16px -3px #000000;
     }
     @for $i from 1 through 4 { /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
        &__image-#{$i}{
@@ -51,6 +53,7 @@
         position: relative;
         background-color: white;
         border-radius: 0 0 1rem 1rem;
+        box-shadow: 2px 1px 16px -3px #000000;
         h3, p{
             padding: 0.3rem;
             margin-top: auto;
