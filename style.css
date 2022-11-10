@@ -103,16 +103,16 @@ main .ville i {
   object-fit: cover;
 }
 .menus .card__image-1 {
-  background-image: url("../images/restaurants/menu-1.jpg");
+  background-image: url("./images/restaurants/menu-#($i).jpg");
 }
 .menus .card__image-2 {
-  background-image: url("../images/restaurants/menu-2.jpg");
+  background-image: url("./images/restaurants/menu-#($i).jpg");
 }
 .menus .card__image-3 {
-  background-image: url("../images/restaurants/menu-3.jpg");
+  background-image: url("./images/restaurants/menu-#($i).jpg");
 }
 .menus .card__image-4 {
-  background-image: url("../images/restaurants/menu-4.jpg");
+  background-image: url("./images/restaurants/menu-#($i).jpg");
 }
 .menus .card__description {
   position: relative;
