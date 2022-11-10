@@ -1,0 +1,4 @@
+gitmodules
+    [submodule "themes/BenjaminCohn"]
+        path = themes/BenjaminCohn
+        url = git://github.com/BenjaminCohn/ohmyfood.git
