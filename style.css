@@ -105,7 +105,7 @@ main .ville i {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   object-fit: cover;
-  box-shadow: 2px 1px 16px -3px #000000;
+  box-shadow: 2px 1px 16px -3px #7e7e7e;
 }
 .menus .card__image-1 {
   background-image: url("./images/restaurants/menu-1.jpg");
@@ -123,7 +123,7 @@ main .ville i {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  box-shadow: 2px 1px 16px -3px #7e7e7e;
 }
 .menus .card__description h3, .menus .card__description p {
   padding: 0.3rem;
