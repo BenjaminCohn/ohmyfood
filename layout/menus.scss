@@ -42,10 +42,9 @@
     box-shadow: none;
     object-fit: cover;
     }
-    @for $i from 1 through 4 {  
-        /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
+    @for $i from 1 through 4 { /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
        &__image-#{$i}{
-            background-image: url("./images/restaurants/menu-#($i).jpg");
+            background-image: url("./images/restaurants/menu-#{$i}.jpg");
         }
     }
     &__description{
