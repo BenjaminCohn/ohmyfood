@@ -40,6 +40,10 @@ header {
   position: relative;
 }
 
+h1 {
+  font-family: "Shrikhand", "sans-serif";
+}
+
 /* ville */
 main .ville {
   display: flex;
