@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  /*padding: 0 7rem;*/
+  padding: 0 7rem;
 }
 @media (max-width: 1000px) {
   main {
@@ -99,7 +99,7 @@ main .ville i {
   /* @for est une boucle qui me permet de prendre les même parametre pour toute les photos*/
 }
 .menus .card__image {
-  height: 15rem;
+  height: 9rem;
   background-size: cover;
   border: 0 solid transparent;
   border-radius: 1rem 1rem 0 0;
@@ -169,6 +169,44 @@ main .ville i {
   font-size: 1rem;
 }
 
+.loader {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  background-color: #fff;
+  opacity: 0.7;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 300ms 7.5s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 200px;
+  width: 200px;
+  border: 5px transparent;
+  border-right: 10px solid #99E2D0;
+  border-top: 8px solid #9356DC;
+  border-left: 6px solid #FF79DA;
+  border-radius: 50%;
+  animation: spin 2.5s infinite ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*Bouton explorer*/
 .explorer button {
   color: white;
@@ -479,39 +517,39 @@ footer p {
 }
 
 .delay-0 {
-  animation-delay: 0;
+  animation-delay: 0 10s;
 }
 
 .delay-1 {
-  animation-delay: 0.1;
+  animation-delay: 1 10s;
 }
 
 .delay-2 {
-  animation-delay: 0.2;
+  animation-delay: 2 10s;
 }
 
 .delay-3 {
-  animation-delay: 0.3;
+  animation-delay: 3 10s;
 }
 
 .delay-4 {
-  animation-delay: 0.4;
+  animation-delay: 4 10s;
 }
 
 .delay-5 {
-  animation-delay: 0.5;
+  animation-delay: 5 10s;
 }
 
 .delay-6 {
-  animation-delay: 0.6;
+  animation-delay: 6 10s;
 }
 
 .delay-7 {
-  animation-delay: 0.7;
+  animation-delay: 7 10s;
 }
 
 .delay-8 {
-  animation-delay: 0.8;
+  animation-delay: 8 10s;
 }
 
 .wrapBtn {
@@ -538,8 +576,6 @@ footer p {
   transform: scale(1.02);
   opacity: 0.9;
 }
-
-
 
 /*********************/
 
