@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  padding: 0 7rem;
+  padding: 0 ;
 }
 @media (max-width: 1000px) {
   main {
@@ -41,6 +41,14 @@ header {
   box-shadow: 1px 1px 10px #dfdfdf;
 }
 
+.header-2 {
+  font-family: "roboto", cursive;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0;
+  position: relative;
+}
+
 h1 {
   font-family: "Shrikhand", "sans-serif";
 }
@@ -57,7 +65,7 @@ main .ville {
 }
 
 main .ville i {
-  font-size: 8px 16px;
+  font-size: 16px;
 }
 
 .menus {
@@ -146,7 +154,7 @@ main .ville i {
 }
 .menus .card__description:hover .fa-solid {
   opacity: 1;
-  transform: scale(1.1) translasteY(-50%);
+  transform: scale(1.1) translasteY(-50);
 }
 
 .card:hover {
@@ -158,11 +166,13 @@ main .ville i {
 .explorer {
   text-align: center;
   background-color: #f2f2f2;
+  padding-top: 1%;
 }
 
 .explorer h2 {
   margin-top: 2rem;
   font-size: 2rem;
+  padding-top: inherit;
 }
 
 .explorer p {
@@ -517,39 +527,39 @@ footer p {
 }
 
 .delay-0 {
-  animation-delay: 0 10s;
+  animation-delay: 00ms;
 }
 
 .delay-1 {
-  animation-delay: 1 10s;
+  animation-delay: 10ms;
 }
 
 .delay-2 {
-  animation-delay: 2 10s;
+  animation-delay: 20ms;
 }
 
 .delay-3 {
-  animation-delay: 3 10s;
+  animation-delay: 30ms;
 }
 
 .delay-4 {
-  animation-delay: 4 10s;
+  animation-delay: 40ms;
 }
 
 .delay-5 {
-  animation-delay: 5 10s;
+  animation-delay: 50ms;
 }
 
 .delay-6 {
-  animation-delay: 6 10s;
+  animation-delay: 60ms;
 }
 
 .delay-7 {
-  animation-delay: 7 10s;
+  animation-delay: 70ms;
 }
 
 .delay-8 {
-  animation-delay: 8 10s;
+  animation-delay: 80ms;
 }
 
 .wrapBtn {
