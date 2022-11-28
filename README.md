@@ -10,7 +10,8 @@ Des maquettes ainsi qu'un [cahier des charges](https://s3-eu-west-1.amazonaws.co
 
 ## Outils et languages pour la réalisation du projet
 
-- Le projet à été réalisé en **HTML5/CSS3** ainsi que le framework front end **SASS**
+- Le projet à été réalisé en **HTML5/CSS3** ainsi que le compiler front end **SASS**
+- Versionnage réalisé sur **Github**
 
 ## Contact
 -  Adresse e-mail : Benjamin.cohen@eemi.com
